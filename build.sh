@@ -33,7 +33,7 @@ echo ----------------
 echo Building Project
 echo ----------------
 pushd $SRCROOT
-xcodebuild -project TRIMCheck.xcodeproj -target all -configuration Release install || exit 1
+xcodebuild -project TRIMCheck.xcodeproj -target trimcheck -configuration Release install || exit 1
 popd
 
 #
@@ -56,20 +56,17 @@ echo ------------------
 echo Building Installer
 echo ------------------
 mkdir -p "$INSTALLER_PATH" || exit 1
-pushd installer
 
 echo "Runing pkgbuild. Note you must be connected to Internet for this to work as it"
 echo "has to contact a time server in order to generate a trusted timestamp. See"
 echo "man pkgbuild for more info under SIGNED PACKAGES."
 pkgbuild --identifier "com.delicioussafari.TRIMCheck" \
-    --scripts "$SRCROOT/installer/scripts" \
     --sign "Developer ID Installer: Douglas Richardson (4L84QT8KA9)" \
     --root "$DSTROOT" \
     "$INSTALLER" || exit 1
 
 
 echo Successfully built TRIMCheck
-open .
-popd
+open "$INSTALLER_PATH"
 
 exit 0
