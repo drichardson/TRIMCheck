@@ -54,7 +54,7 @@ private func readSystemProfileArray() -> NSArray? {
     task.waitUntilExit()
     
     if task.terminationStatus != 0 {
-        println("system_profiler returned error status")
+        NSLog("system_profiler returned error status")
         return nil
     }
     
@@ -66,7 +66,7 @@ private func readSystemProfileArray() -> NSArray? {
         error: &error)
     
     if plist == nil {
-        println("Failed to parse system_profiler results. \(error?.localizedDescription)")
+        NSLog("%@", "Failed to parse system_profiler results. \(error?.localizedDescription)")
         return nil
     }
     
