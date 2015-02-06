@@ -36,22 +36,6 @@ pushd $SRCROOT
 xcodebuild -project TRIMCheck.xcodeproj -target trimcheck -configuration Release install || exit 1
 popd
 
-#
-# Make installer
-#
-echo ----------
-echo Fixup Root
-echo ----------
-
-# Get rid of everything in /usr/local like. Don't do everything automatically, otherwise
-# you might slightly delete something you need.
-DSTLOCAL="$DSTROOT/usr/local/bin"
-rm "$DSTLOCAL/trimcheck" || exit 1
-rmdir "$DSTROOT/usr/local/bin/" || exit 1
-rmdir "$DSTROOT/usr/local" || exit 1
-rmdir "$DSTROOT/usr" || exit 1
-
-
 echo ------------------
 echo Building Installer
 echo ------------------

@@ -8,22 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		912629B81A85448F00403FBE /* com.delicioussafari.trimcheck.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = 912629B71A85448200403FBE /* com.delicioussafari.trimcheck.plist */; };
-		912629BB1A8557DD00403FBE /* trimcheck in CopyFiles */ = {isa = PBXBuildFile; fileRef = 915B87651A831C9100CBB163 /* trimcheck */; };
 		915B87691A831C9100CBB163 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915B87681A831C9100CBB163 /* main.swift */; };
 		915B87701A8325C100CBB163 /* system_profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915B876F1A8325C100CBB163 /* system_profile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		912629BA1A8557CE00403FBE /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 8;
-			dstPath = /usr/local/bin;
-			dstSubfolderSpec = 0;
-			files = (
-				912629BB1A8557DD00403FBE /* trimcheck in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
 		915B87631A831C9100CBB163 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -90,7 +79,6 @@
 				915B87611A831C9100CBB163 /* Sources */,
 				915B87621A831C9100CBB163 /* Frameworks */,
 				915B87631A831C9100CBB163 /* CopyFiles */,
-				912629BA1A8557CE00403FBE /* CopyFiles */,
 			);
 			buildRules = (
 			);
