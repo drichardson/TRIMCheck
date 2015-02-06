@@ -1,0 +1,249 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		912629B81A85448F00403FBE /* com.delicioussafari.trimcheck.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = 912629B71A85448200403FBE /* com.delicioussafari.trimcheck.plist */; };
+		915B87691A831C9100CBB163 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915B87681A831C9100CBB163 /* main.swift */; };
+		915B87701A8325C100CBB163 /* system_profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915B876F1A8325C100CBB163 /* system_profile.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		915B87631A831C9100CBB163 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /Library/LaunchAgents;
+			dstSubfolderSpec = 0;
+			files = (
+				912629B81A85448F00403FBE /* com.delicioussafari.trimcheck.plist in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		912629B71A85448200403FBE /* com.delicioussafari.trimcheck.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = com.delicioussafari.trimcheck.plist; sourceTree = "<group>"; };
+		915B87651A831C9100CBB163 /* trimcheck */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = trimcheck; sourceTree = BUILT_PRODUCTS_DIR; };
+		915B87681A831C9100CBB163 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		915B876F1A8325C100CBB163 /* system_profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = system_profile.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		915B87621A831C9100CBB163 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		915B875C1A831C9100CBB163 = {
+			isa = PBXGroup;
+			children = (
+				915B87671A831C9100CBB163 /* TRIMCheck */,
+				915B87661A831C9100CBB163 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		915B87661A831C9100CBB163 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				915B87651A831C9100CBB163 /* trimcheck */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		915B87671A831C9100CBB163 /* TRIMCheck */ = {
+			isa = PBXGroup;
+			children = (
+				912629B71A85448200403FBE /* com.delicioussafari.trimcheck.plist */,
+				915B87681A831C9100CBB163 /* main.swift */,
+				915B876F1A8325C100CBB163 /* system_profile.swift */,
+			);
+			path = TRIMCheck;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		915B87641A831C9100CBB163 /* trimcheck */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 915B876C1A831C9100CBB163 /* Build configuration list for PBXNativeTarget "trimcheck" */;
+			buildPhases = (
+				915B87611A831C9100CBB163 /* Sources */,
+				915B87621A831C9100CBB163 /* Frameworks */,
+				915B87631A831C9100CBB163 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = trimcheck;
+			productName = TRIMCheck;
+			productReference = 915B87651A831C9100CBB163 /* trimcheck */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		915B875D1A831C9100CBB163 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Douglas Richardson";
+				TargetAttributes = {
+					915B87641A831C9100CBB163 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 915B87601A831C9100CBB163 /* Build configuration list for PBXProject "TRIMCheck" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 915B875C1A831C9100CBB163;
+			productRefGroup = 915B87661A831C9100CBB163 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				915B87641A831C9100CBB163 /* trimcheck */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		915B87611A831C9100CBB163 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				915B87701A8325C100CBB163 /* system_profile.swift in Sources */,
+				915B87691A831C9100CBB163 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		915B876A1A831C9100CBB163 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		915B876B1A831C9100CBB163 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		915B876D1A831C9100CBB163 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		915B876E1A831C9100CBB163 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		915B87601A831C9100CBB163 /* Build configuration list for PBXProject "TRIMCheck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				915B876A1A831C9100CBB163 /* Debug */,
+				915B876B1A831C9100CBB163 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		915B876C1A831C9100CBB163 /* Build configuration list for PBXNativeTarget "trimcheck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				915B876D1A831C9100CBB163 /* Debug */,
+				915B876E1A831C9100CBB163 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 915B875D1A831C9100CBB163 /* Project object */;
+}
