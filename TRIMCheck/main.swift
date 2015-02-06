@@ -12,15 +12,17 @@
 import Foundation
 import Cocoa
 
+NSLog("Getting list of SSD drives from system profile")
+
 let allSATAItems = readSystemProfileSATAItems()
 let solidStateSATAItems = allSATAItems.filter({ $0.isSolidState })
 
 if solidStateSATAItems.count <= 0 {
-    println("There are no SSD drives")
+    NSLog("There are no SSD drives")
     exit(0)
 }
 
-let solidStateWithoutTRIM = solidStateSATAItems.filter { $0.hasTRIMSupport }
+let solidStateWithoutTRIM = solidStateSATAItems.filter { !$0.hasTRIMSupport }
 
 func reportMessageEverywhere(#title : String, #message : String) {
     let textMessage = title + ": " + message
