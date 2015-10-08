@@ -58,15 +58,14 @@ private func readSystemProfileArray() -> NSArray? {
         return nil
     }
     
-    var data = out.fileHandleForReading.readDataToEndOfFile()
-    var error : NSError?
-    let plist : AnyObject? = NSPropertyListSerialization.propertyListWithData(data,
-        options: Int(NSPropertyListMutabilityOptions.Immutable.rawValue),
-        format: nil,
-        error: &error)
-    
-    if plist == nil {
-        NSLog("%@", "Failed to parse system_profiler results. \(error?.localizedDescription)")
+    let data = out.fileHandleForReading.readDataToEndOfFile()
+    let plist : AnyObject?
+    do {
+        plist = try NSPropertyListSerialization.propertyListWithData(data,
+                options: [.Immutable],
+                format: nil)
+    } catch let error as NSError {
+        NSLog("%@", "Failed to parse system_profiler results. \(error.localizedDescription)")
         return nil
     }
     

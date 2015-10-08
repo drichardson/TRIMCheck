@@ -24,7 +24,7 @@ if solidStateSATAItems.count <= 0 {
 
 let solidStateWithoutTRIM = solidStateSATAItems.filter { !$0.hasTRIMSupport }
 
-func reportMessageEverywhere(#title : String, #message : String) {
+func reportMessageEverywhere(title title : String, message : String) {
     let textMessage = title + ": " + message
     
     // to NSLog
