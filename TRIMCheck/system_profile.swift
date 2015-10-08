@@ -19,9 +19,6 @@ struct SATAItem
 
 func readSystemProfileSATAItems() -> [SATAItem] {
     var result : [SATAItem] = []
-    //            if let dict = ((array[0] as? NSDictionary)["_items"] as? NSArray) {
-    //              if let items = dict["_items"] as? NSArray {
-    //                for item in items {
     
     if let array = ((readSystemProfileArray()?[0] as? NSDictionary)?["_items"] as? NSArray) {
         for item in array {
