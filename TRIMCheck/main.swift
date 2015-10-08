@@ -43,6 +43,14 @@ if solidStateWithoutTRIM.count > 0 {
         drives += ssd.name + "\n"
     }
     let title = "Detected SSD drives without TRIM support"
-    let message = drives + "\nTo resolve, go here: https://gist.github.com/return1/4058659"
+    
+    var suggestion : String
+    if Int32(floor(NSAppKitVersionNumber)) < NSAppKitVersionNumber10_10_4 {
+        suggestion = "To resolve, go here: https://gist.github.com/return1/4058659"
+    } else {
+        suggestion = "To resolve, run: sudo trimforce enable"
+    }
+    
+    let message = drives + "\n" + suggestion
     reportMessageEverywhere(title: title, message: message)
 }
