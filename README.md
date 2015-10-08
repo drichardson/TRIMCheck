@@ -1,4 +1,5 @@
-*UPDATE*
+Update
+------
 TRIMCheck may no longer be necessary as of 10.10.4, which includes a
 command line tool called `trimforce`. However, TRIMCheck will cause
 no harm, and will let you know if TRIM is ever disabled, for whatever reason.
