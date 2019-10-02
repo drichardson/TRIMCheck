@@ -18,6 +18,3 @@ rerun the commands in the linked gist in case the TRIM status changes.
 
 For OS X 10.10.4 and later, trim support is enabled with: `sudo trimforce enable`.
 
-Download
-========
-You can download [TRIMCheck from SourceForge](http://sourceforge.net/projects/trimcheck/files/TRIMCheck.pkg/download).
